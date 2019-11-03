@@ -1,0 +1,55 @@
+/* Fonts */
+
+@font-face {
+    font-family: "Apercu";
+    src: url("/static/fonts/Apercu\ Regular.otf");
+}
+
+@font-face {
+    font-family: "Apercu";
+    src: url("/static/fonts/Apercu\ Bold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Apercu";
+    src: url("/static/fonts/Apercu\ Italic.otf");
+    font-style: italic;    
+}
+
+@font-face {
+    font-family: "Apercu";
+    src: url("/static/fonts/Apercu\ Bold\ Italic.otf");
+    font-weight: bold;
+    font-style: italic;    
+}
+
+@font-face {
+    font-family: "Apercu";
+    src: url("/static/fonts/Apercu\ Light.otf");
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Apercu";
+    src: url("/static/fonts/Apercu\ Light\ Italic.otf");
+    font-weight: lighter;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Apercu";
+    src: url("/static/fonts/Apercu\ Medium.otf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Apercu";
+    src: url("/static/fonts/Apercu\ Medium\ Italic.otf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+* {
+    font-family: "Apercu";
+}
