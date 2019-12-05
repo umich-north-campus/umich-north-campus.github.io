@@ -13,31 +13,43 @@
 </head>
 <body style="height: 100%; margin: 0; display: flex; flex-direction: column;">
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="position: relative">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#" style='font-weight: bold'>North Campus</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-    <li class="nav-item active">
-        <a class="nav-link" href="#">Map <span class="sr-only">(current)</span></a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Buildings
-      </a>
-      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Something else here</a>
-      </div>
-    </li>
-    </ul>
+      <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+          <a class="nav-link" href="/">Map <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Buildings
+          </a>
+          
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/buildings/art_architecture.html"> Art & Architecture Building (A & A) </a>
+              <a class="dropdown-item" href="/buildings/bbb.html"> Bob & Betty Beyster Building (BEYS) (A & A) </a>
+              <a class="dropdown-item" href="/buildings/BursleyHall.html">Bursley Hall (BUR)  </a>
+              <a class="dropdown-item" href="/buildings/CSRB.html"> Climate and Space Research Building (CSR) (A & A) </a>
+              <a class="dropdown-item" href="/buildings/DOW.html">  Dow Engineering Building (DO) </a>
+              <a class="dropdown-item" href="/buildings/duderstadt.html"> Duderstadt Center (DD) </a>
+              <a class="dropdown-item" href="/buildings/earlvmoore.html">  Earl V. Moore Building School of Music (S) </a>
+              <a class="dropdown-item" href="/buildings/EECS.html">  Engineering and Computer Science Building (EECS) </a>
+              <a class="dropdown-item" href="/buildings/GGBrown.html"> G. G. Brown Laboratory (GGB) </a>
+              <a class="dropdown-item" href="/buildings/art_architecture.html"> Art & Architecture Building (A & A) </a>
+              <a class="dropdown-item" href="/buildings/ioe.html"> Industrial and Operations  Engineering Building (IOE) </a>
+              <a class="dropdown-item" href="/buildings/lurieBME.html"> Lurie Biomedical Engineering Building (LBM) </a>
+              <a class="dropdown-item" href="/buildings/ncrc.html"> North Campus Research Complex (NCR) </a>
+              <a class="dropdown-item" href="/buildings/pierpontcommons.html"> Pierpont Commons (PIE) </a>
+          </div>
+      </li>
+      </ul>
   </div>
 </nav>
+
 <div id="mapid" style="flex-grow: 1;"></div>
 
 <script>
@@ -57,6 +69,7 @@ const mapData = [
     name: "Bursley Hall",
     short: "BUR",
     preview: "https://pbs.twimg.com/media/CeF_7LCWEAAZP_c.jpg",
+    link: "/buildings/BursleyHall.html",
     geo: {
       lat: 42.2937249,
       lon: -83.7231642
@@ -66,6 +79,7 @@ const mapData = [
     name: "Mortimer E. Cooley Building",
     short: "COO",
     preview: "http://s3.amazonaws.com/michiganmodern-prod/photos/512/building_homepage/Gab001-2.JPG?1363636749",
+    link: "/buildings/cooley.html",
     geo: {
       lat: 42.2906252,
       lon: -83.7158339
@@ -75,6 +89,7 @@ const mapData = [
     name: "Industrial and Operations Engineering Building",
     short: "IOE",
     preview: "https://c4e.engin.umich.edu/assets/ioe_main_door-c4e.png",
+    link: "/buildings/ioe.html",
     geo: {
       lat: 42.2910254,
       lon: -83.7158926,
@@ -84,6 +99,7 @@ const mapData = [
     name: "James and Anne Duderstadt Center",
     short: "D",
     preview: "https://events.umich.edu/media/cache/group_large_lightbox/media/attachments/2018/09/group_4245_original.jpeg",
+    link: "/buildings/duderstadt.html",
     geo: {
       lat: 42.2911672, 
       lon: -83.7179066
@@ -93,6 +109,7 @@ const mapData = [
     name: "Dow Engineering Building",
     short: "DO",
     preview: "http://cheresearch.engin.umich.edu/thompson/images/laboratory/hhdow.jpg",
+    link: "/buildings/DOW.html",
     geo: {
       lat: 42.2929854,
       lon: -83.717619,
@@ -102,6 +119,7 @@ const mapData = [
     name: "G.G. Brown Building",
     short: "GGB",
     preview: "https://i0.wp.com/www10.aeccafe.com/blogs/arch-showcase/files/2016/07/158CurtClayton4408.jpg",
+    link: "/buildings/GGBrown.html",
     geo: {
       lat: 42.2931198,
       lon: -83.7158874,
@@ -111,6 +129,7 @@ const mapData = [
     name: "Francois-Xavier Bagnoud Building",
     short: "FX",
     preview: "https://events.umich.edu/media/cache/group_large_lightbox/media/attachments/2017/09/group_3245_original.jpeg",
+    link: "/buildings/FXB.html",
     geo: {
       lat: 42.2934871,
       lon: -83.7141706,
@@ -120,6 +139,7 @@ const mapData = [
     name: "Pierpont Commons",
     short: "PIE",
     preview: "https://uunions.umich.edu/files/uunions/styles/cinema16-9_med/public/field/image/Computer%20Showcase_1.jpg?itok=6jaHqUrp",
+    link: "/buildings/pierpontcommons.html",
     geo: {
       lat: 42.2911573,
       lon: -83.7196795,
@@ -129,6 +149,7 @@ const mapData = [
     name: "Earl V. Moore Building, School of Music",
     short: "S",
     preview: "https://arts.umich.edu/wp-content/uploads/sites/35/montage/smtd-celebrates-renovation-of-moore-building-EarlVMooreBuilding-story-lg-20140228.jpg",
+    link: "/buildings/earlvmoore.html",
     geo: {
       lat: 42.2903768,
       lon: -83.723195,
@@ -138,6 +159,7 @@ const mapData = [
     name: "Bob and Betty Beyster Building",
     short: "BEYS",
     preview: "https://cse.engin.umich.edu/wp-content/uploads/sites/3/2019/03/bbb-1000.jpg",
+    link: "/buildings/bbb.html",
     geo: {
       lat: 42.2929588,
       lon: -83.7185323,
@@ -147,6 +169,7 @@ const mapData = [
     name: "EECS Building",
     short: "EEC",
     preview: "http://www.eecs.umich.edu/courses/eecs638/EecsAtrium.jpeg",
+    link: "/buildings/EECS.html",
     geo: {
       lat: 42.2924147,
       lon: -83.7162634,
@@ -156,6 +179,7 @@ const mapData = [
     name: "Climate and Space Research Building",
     short: "CSR",
     preview: "https://panels.com/wp-content/uploads/2019/01/WOL_Projects__0020_UniversityOfMichiganClimateSpaceResearchBuilding.jpg",
+    link: "/buildings/CSRB.html",
     geo: {
       lat: 42.2942184,
       lon: -83.7137563
@@ -165,6 +189,7 @@ const mapData = [
     name: "Art and Architecture Building",
     short: "A&A",
     preview: "https://taubmancollege.umich.edu/sites/default/files/styles/four_column_feature/public/featured_images/header_building_fall_4.jpg?itok=gcFZW8wK",
+    link: "/buildings/art_architecture.html",
     geo: {
       lat: 42.2894363,
       lon: -83.7193636,
@@ -174,6 +199,7 @@ const mapData = [
     name: "Lurie Biomedical Engineering Building",
     short: "LBM",
     preview: "https://rpm.engin.umich.edu/wp-content/uploads/sites/278/2017/03/Lurie-Reflecting-Pool-e1490801661832.jpg",
+    link: "/buildings/lurieBME.html",
     geo: {
       lat: 42.2890505,
       lon: -83.715652
@@ -183,6 +209,7 @@ const mapData = [
     name: "North Campus Research Complex",
     short: "NCR",
     preview: "http://www.annarbor.com/assets_c/2012/06/102411_BIZ_Pfizer_U_of_M_16-thumb-590x392-116038.jpg",
+    link: "/buildings/ncrc.html",
     geo: {
       lat: 42.2997788,
       lon: -83.7088256
@@ -199,7 +226,7 @@ function renderPopup(item) {
           <h6 style='margin: 0'>${item.name}</h6>
           <p style='margin-top: 3px'>Acronym: ${item.short}</p>
         </div>
-        <a href="#" style='margin-top: 3px'>View building information →</a>
+        <a href="${item.link}" style='margin-top: 3px'>View building information →</a>
       </div>
     </div>
   `;
