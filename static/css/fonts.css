@@ -54,6 +54,10 @@
     font-family: "Apercu";
 }
 
+.d-flex {
+    padding-bottom: 50px;
+}
+
 p {
     font-size: 14pt;
 }
